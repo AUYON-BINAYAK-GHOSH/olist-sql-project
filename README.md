@@ -1,23 +1,28 @@
-# End-to-End SQL Analysis of the Olist E-Commerce Dataset
+# SQL-Based E-Commerce Analytics Platform (Olist Dataset)
 
-## Project Overview
+## Executive Summary
 
-This repository contains a comprehensive SQL-based analysis of the public Olist e-commerce dataset, which features nearly 100,000 orders from a Brazilian marketplace. The project showcases a full data analysis workflow, from initial data cleaning and preparation to in-depth, actionable business intelligence queries.
+This repository documents an end-to-end analytics project on the Brazilian Olist e-commerce dataset. Using MySQL, I developed a complete data pipeline that starts with cleaning raw, multi-source `.csv` files and culminates in a series of advanced analytical queries. The project is designed to mirror real-world business intelligence tasks and extract strategic insights from complex data.
 
-The entire analysis is performed using SQL (MySQL dialect) and is structured to be a showcase of practical data analysis skills.
+## Key Insights & Queries
 
-## Key Features
+* **Data Integrity:** Implemented a robust data cleaning process to standardize formats, impute missing values, and resolve inconsistencies, creating a reliable foundation for analysis.
+* **Customer Segmentation (RFM):** Engineered an RFM model to identify and profile key customer segments, enabling data-driven decisions for retention and marketing efforts.
+* **Operational Efficiency:** Analyzed the entire order lifecycle to pinpoint bottlenecks in the delivery chain and benchmark seller processing times against fulfillment SLAs.
+* **Revenue & Product Strategy:** Identified top-performing and under-performing product categories, and discovered product bundling opportunities through co-purchase pattern analysis.
+* **Geospatial Hotspots:** Aggregated and analyzed geolocation data to map high-density customer zones, providing a basis for targeted logistics or marketing.
 
-* **Data Cleaning:** A robust script to clean the raw data, handling missing values, illogical timestamps, and duplicate geolocation entries.
-* **RFM Customer Segmentation:** Identifies high-value and at-risk customer segments.
-* **Performance Analysis:** Deep dives into delivery performance, product category success, and payment method trends.
-* **Advanced Analytics:** Includes queries for geospatial analysis (customer hotspots), product bundling, and sales funnel drop-off rates.
+## Technologies Used
 
-## How to Use This Project
+* **Database:** MySQL
+* **Language:** SQL
+* **Version Control:** Git / GitHub
 
-To run this analysis, you will need a MySQL database environment (like MySQL Server + MySQL Workbench).
+## Replicating the Analysis
 
-1.  **Set Up Database:** Create a new database schema (e.g., `olist_db`).
-2.  **Download Data:** Get the Olist dataset from Kaggle: [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce).
-3.  **Create Tables & Import Data:** First, you must create the tables using a schema script and then import the data from the downloaded `.csv` files into their corresponding tables in your database.
-4.  **Run the Analysis Script:** Execute the `olist_analysis.sql` script provided in this repository. It will first clean the data and then run all 10 analysis projects.
+A MySQL environment (e.g., MySQL Server & Workbench) is required to run this project.
+
+1.  **Create Schema:** Initialize a new database schema (e.g., `olist_db`).
+2.  **Download Dataset:** Obtain the raw `.csv` files from the [Olist Kaggle page](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce).
+3.  **Build Database:** Use a schema script to create the necessary tables and then import the data from the corresponding `.csv` files.
+4.  **Run Analysis:** Execute the `olist_analysis.sql` script to apply all cleaning transformations and run the 10 analytical queries.
