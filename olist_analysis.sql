@@ -2,7 +2,6 @@
 --
 -- OLIST E-COMMERCE DATA ANALYSIS PIPELINE
 -- Author:Auyon Binayak Ghosh
--- Date: [Current Date]
 
 --
 -- =================================================================================================
