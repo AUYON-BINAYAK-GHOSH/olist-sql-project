@@ -1,10 +1,9 @@
 -- =================================================================================================
 --
 -- OLIST E-COMMERCE DATA ANALYSIS PIPELINE
--- Author: [Your Name]
+-- Author:Auyon Binayak Ghosh
 -- Date: [Current Date]
--- Description: An end-to-end SQL script that first cleans the Olist dataset and then
---              conducts 10 distinct business intelligence analyses in a MySQL environment.
+
 --
 -- =================================================================================================
 
